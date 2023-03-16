@@ -6,6 +6,8 @@ project(
     DESCRIPTION "An open-source big data platform designed and optimized for the Internet of Things(IOT)"
 )
 
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-stringop-overflow")
+
 if (NOT DEFINED TD_SOURCE_DIR)
   set( TD_SOURCE_DIR ${PROJECT_SOURCE_DIR} )
 endif()
